@@ -25,11 +25,6 @@ export default ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        // host: env('DATABASE_HOST', 'localhost'),
-        // port: env.int('DATABASE_PORT', 5432),
-        // database: env('DATABASE_NAME', 'ecomerce-coffee'),
-        // user: env('DATABASE_USERNAME', ''),
-        // password: env('DATABASE_PASSWORD', ''),
         ssl: {
           rejectUnauthorized: false,
         },
